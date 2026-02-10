@@ -9,7 +9,7 @@ import gzip  # Needed to open the compressed model
 # -------------------------------------------------------------------
 # We use gzip because the model file was compressed to fit on GitHub
 try:
-    with gzip.open('ipl_model.pkl', 'rb') as f:
+    with gzip.open('ipl_model(1).pkl', 'rb') as f:
         pipe = pickle.load(f)
 except FileNotFoundError:
     st.error("Error: 'ipl_model.pkl' not found. Please upload the model file.")
@@ -108,3 +108,4 @@ if st.button('🔮 Predict Final Score', type="primary"):
 
 st.write("---")
 st.caption("Built with ❤️ by Nanba")
+
