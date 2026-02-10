@@ -1,0 +1,14 @@
+# Create requirements.txt file
+content = """
+streamlit
+pandas
+scikit-learn
+numpy
+"""
+with open("requirements.txt", "w") as f:
+    f.write(content)
+
+from google.colab import files
+files.download("requirements.txt")
+files.download("app.py")
+# Note: ipl_model.pkl-ah neengale 'Files' section-la irundhu download pannidunga
